@@ -17,7 +17,7 @@ use std::future::Future;
 /// # use hyper::{Body, Response, Server};
 /// # use routerify::{Router, RouterService};
 /// # // Import websocket types.
-/// use routerify_websocket::{upgrade_ws_with_config, WebSocket, WebSocketConfig};
+/// use routerify_ws::{upgrade_ws_with_config, WebSocket, WebSocketConfig};
 /// # use std::{convert::Infallible, net::SocketAddr};
 ///
 /// # // A handler for websocket connections.
@@ -107,7 +107,7 @@ where
 /// # use hyper::{Body, Response, Server};
 /// # use routerify::{Router, RouterService};
 /// # // Import websocket types.
-/// use routerify_websocket::{upgrade_ws, WebSocket};
+/// use routerify_ws::{upgrade_ws, WebSocket};
 /// # use std::{convert::Infallible, net::SocketAddr};
 ///
 /// # // A handler for websocket connections.

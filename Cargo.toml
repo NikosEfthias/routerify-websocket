@@ -1,12 +1,12 @@
 [package]
-name = "routerify-websocket"
-version = "1.0.0"
+name = "routerify-ws"
+version = "2.0.0"
 description = "The websocket support for the Routerify library."
-homepage = "https://github.com/routerify/routerify-websocket"
-repository = "https://github.com/routerify/routerify-websocket"
+homepage = "https://github.com/nikosefthias/routerify-ws"
+repository = "https://github.com/nikosefthias/routerify-ws"
 keywords = ["routerify", "hyper-rs", "hyper", "websocket", "ws"]
 categories = ["asynchronous", "web-programming", "web-programming::websocket"]
-authors = ["Rousan Ali <hello@rousan.io>"]
+authors = ["Nikos Efthias <nikos@mugsoft.io>","Rousan Ali <hello@rousan.io>"]
 readme = "README.md"
 license = "MIT"
 edition = "2018"
@@ -30,12 +30,12 @@ hyper = "0.14.11"
 headers = "0.3.4"
 tokio-tungstenite = { version = "0.15.0", default-features = false }
 futures = { version = "0.3.16", default-features = false }
-tokio = { version = "1.9.0", futures = ["full"] }
+tokio = { version = "1", features = ["full"] }
 
-serde = { version = "1.0.127", optional = true }
-serde_json = { version = "1.0.66", optional = true }
+serde = { version = "1", optional = true }
+serde_json = { version = "1", optional = true }
 
 [dev-dependencies]
-tokio = { version = "1.9.0", features = ["full"] }
-serde = { version = "1.0.127", features = ["derive"] }
-tokio-tungstenite = { version = "0.15.0", features = ["rustls-tls"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+tokio-tungstenite = { version = "0", features = ["rustls-tls"] }

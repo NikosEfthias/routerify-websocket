@@ -3,7 +3,7 @@ use futures::{SinkExt, StreamExt};
 use hyper::{Body, Response, Server};
 use routerify::{Router, RouterService};
 // Import websocket types.
-use routerify_websocket::{upgrade_ws, Message, WebSocket};
+use routerify_ws::{upgrade_ws, Message, WebSocket};
 use std::{convert::Infallible, net::SocketAddr};
 
 // A handler for websocket connections.

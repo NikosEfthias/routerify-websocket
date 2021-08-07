@@ -5,7 +5,7 @@ type BoxError = Box<dyn std::error::Error + Send + Sync>;
 
 /// A set of errors that can occur during handling the websocket connections and in other operations.
 #[derive(Display)]
-#[display(fmt = "routerify-websocket: {}")]
+#[display(fmt = "ws: {}")]
 pub enum WebsocketError {
     /// Websocket upgrade error.
     #[display(fmt = "Websocket upgrade error: {}", _0)]

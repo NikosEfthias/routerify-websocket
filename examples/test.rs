@@ -2,7 +2,7 @@ use futures::{SinkExt, StreamExt};
 use hyper::{Body, Request, Response, Server};
 use routerify::prelude::*;
 use routerify::{Middleware, Router, RouterService};
-use routerify_websocket::{upgrade_ws, WebSocket};
+use routerify_ws::{upgrade_ws, WebSocket};
 use serde::{Deserialize, Serialize};
 use std::{convert::Infallible, net::SocketAddr};
 use tokio_tungstenite::tungstenite::protocol::Message as ClientMessage;

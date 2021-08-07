@@ -1,13 +1,14 @@
-[![Github Actions Status](https://github.com/routerify/routerify-websocket/workflows/Test/badge.svg)](https://github.com/routerify/routerify-websocket/actions)
-[![crates.io](https://img.shields.io/crates/v/routerify-websocket.svg)](https://crates.io/crates/routerify-websocket)
-[![Documentation](https://docs.rs/routerify-websocket/badge.svg)](https://docs.rs/routerify-websocket)
-[![MIT](https://img.shields.io/crates/l/routerify-websocket.svg)](./LICENSE)
+[![crates.io](https://img.shields.io/crates/v/routerify-ws.svg)](https://crates.io/crates/routerify-ws)
+[![Documentation](https://docs.rs/routerify-ws/badge.svg)](https://docs.rs/routerify-ws)
+[![MIT](https://img.shields.io/crates/l/routerify-ws.svg)](./LICENSE)
 
-# routerify-websocket
+# This is a updated and maintained fork of [routerify-websocket](https://docs.rs/routerify-websocket) library
+
+# routerify-ws
 
 The `WebSocket` support for the [Routerify](https://github.com/routerify/routerify) library.
 
-[Docs](https://docs.rs/routerify-websocket)
+[Docs](https://docs.rs/routerify-ws)
 
 ## Install
 
@@ -16,18 +17,18 @@ Add this to your `Cargo.toml` file:
 ```toml
 [dependencies]
 routerify = "2"
-routerify-websocket = "2"
+routerify-ws = "2"
 ```
 
 ## Example
- 
+
 ```rust
 // Import `SinkExt` and `StreamExt` to send and read websocket messages.
 use futures::{SinkExt, StreamExt};
 use hyper::{Body, Response, Server};
 use routerify::{Router, RouterService};
 // Import websocket types.
-use routerify_websocket::{upgrade_ws, Message, WebSocket};
+use routerify_ws::{upgrade_ws, Message, WebSocket};
 use std::{convert::Infallible, net::SocketAddr};
 
 // A handler for websocket connections.
