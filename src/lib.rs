@@ -72,7 +72,7 @@
 pub use self::error::WebsocketError;
 pub use message::Message;
 pub use tokio_tungstenite::tungstenite::protocol::{frame::coding::CloseCode, WebSocketConfig};
-pub use upgrade::{upgrade_ws, upgrade_ws_with_config};
+pub use upgrade::{upgrade_ws, upgrade_ws_with_config, upgrade_ws_with_config_and_req, upgrade_ws_with_req};
 pub use websocket::WebSocket;
 
 mod error;

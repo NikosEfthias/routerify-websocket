@@ -1,6 +1,6 @@
 [package]
 name = "routerify-ws"
-version = "2.0.0"
+version = "2.1.0"
 description = "The websocket support for the Routerify library."
 homepage = "https://github.com/nikosefthias/routerify-ws"
 repository = "https://github.com/nikosefthias/routerify-ws"
